@@ -51,11 +51,14 @@ center_frame.place(x=utils.width_percentage(25), y=utils.height_percentage(25))
 # adding cells grid using cellClass
 for x in range(settings.GRID_SIDE):
     for y in range(settings.GRID_SIDE):
-        cell= Cell()
+        cell= Cell(x,y)
         cell.create_button_object(center_frame)
         cell.cell_button_object.grid(
             column=x, row=y
         )
+
+Cell.randomize_mines()
+ 
 
 # run tk until cross button is clicked
 root.mainloop()
