@@ -27,6 +27,18 @@ top_frame= Frame(
     height=utils.height_percentage(25)
 )
 
+game_title= Label(
+    top_frame,
+    bg='black',
+    fg='white',
+    text='Minesweeper Game',
+    font=('',36)
+)
+
+game_title.place(
+    x=utils.width_percentage(25), y=0
+)
+
 #locates the top frame, the top most left corner being 0,0
 top_frame.place(x=0, y= 0)
 
@@ -63,6 +75,6 @@ Cell.cell_count_label_object.place(x=0,y=0)
 
 Cell.randomize_mines()
  
-
+ 
 # run tk until cross button is clicked
 root.mainloop()

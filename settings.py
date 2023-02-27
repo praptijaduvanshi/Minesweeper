@@ -4,3 +4,4 @@ GRID_SIDE=6
 CELL_COUNT= GRID_SIDE ** 2
 # // forces to be integer, ignores remainder
 MINES_COUNT= (CELL_COUNT) // 4
+CELLS_LEFT= CELL_COUNT-MINES_COUNT
