@@ -22,7 +22,7 @@ root.resizable(False, False) #To disable changing size of the window
 # creating elements within window, dividing into multiple frames.
 top_frame= Frame(
     root,
-    bg='yellow',
+    bg='black',
     width=720,
     height=utils.height_percentage(25)
 )
@@ -44,7 +44,7 @@ top_frame.place(x=0, y= 0)
 
 left_frame= Frame(
     root,
-    bg="green",
+    bg="black",
     width=utils.width_percentage(25),
     height=utils.height_percentage(75)
 )
